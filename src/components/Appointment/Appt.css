@@ -1,9 +1,10 @@
 .appt-card {
-  border: 3px solid white;
-  height: 60%;
+  border: 5px solid white;
+  border-radius: 2%;
+  height: 45%;
   width: 30%;
   margin: 2%;
-  background-color: #8F90A7;
+  background-color: #FFBF80;
   padding: 1%;
   text-align: center;
 }
@@ -21,4 +22,5 @@
 
 .appt-description {
   font-size: 1.3rem;
+  color: #381C0B;
 }

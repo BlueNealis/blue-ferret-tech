@@ -1,6 +1,8 @@
 .apt-block {
   display: flex;
-  background-color: #1F235B;
+  background-color: #FF9F1C;
   width: 70vw;
   height: 70vh;
+  margin-top: 2%;
+  padding: 2%;
 }

@@ -3,7 +3,7 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (<header className='nav-bar'>
-    <h1>Blue Fox Technology</h1>
+    <h1>Ferret Customs & Tech</h1>
     </header>
   )
 }

@@ -10,6 +10,7 @@ describe('Dashboard', () => {
   it('Should be able to click on one of the service options and have it change to the form tab', () => {
 
   })
+  
   it('Should be able to go back to the initial tab and change services', () => {
 
   })
@@ -18,7 +19,7 @@ describe('Dashboard', () => {
 
   })
 
-  it('Should auto fill to the consult/contact form if the user does not pick a service option', () => {
+  it('Should automatically go to the consult/contact form if the user does not pick a service option', () => {
 
   })
 

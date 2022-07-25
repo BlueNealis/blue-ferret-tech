@@ -1,0 +1,24 @@
+.appt-card {
+  border: 3px solid white;
+  height: 60%;
+  width: 30%;
+  margin: 2%;
+  background-color: #8F90A7;
+  padding: 1%;
+  text-align: center;
+}
+
+.appt-card:hover {
+  cursor: pointer;
+  background-color: #D9D9D9;
+}
+
+.appt-title {
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 20%;
+}
+
+.appt-description {
+  font-size: 1.3rem;
+}

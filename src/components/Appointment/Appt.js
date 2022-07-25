@@ -1,10 +1,10 @@
 import React from 'react'
-import './Appt.scss'
+import './Appt.css'
 
 const Appt = ({title, description}) => {
   return (<div className='appt-card'>
-    <h1>{title}</h1>
-    <p>{description}</p>
+    <h1 className='appt-title'>{title}</h1>
+    <p className='appt-description'>{description}</p>
       </div>)
 }
 export default Appt

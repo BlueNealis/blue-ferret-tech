@@ -1,6 +1,7 @@
 import React from 'react'
 import './AptWindow.css'
 import Appt from '../Appointment/Appt'
+import Form from '../Form/Form'
 const AptWindow = () => {
 
   return(<div className='appt-block'>

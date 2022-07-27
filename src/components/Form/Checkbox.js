@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Checkbox = ({label, value, onChange}) => {
+const Checkbox = ({label, value, onChange}) => {
   return(
     <label>
       <input type="checkbox" checked={value} onChange={onChange} />
@@ -8,3 +8,5 @@ export const Checkbox = ({label, value, onChange}) => {
   </label>
   )
 }
+
+export default Checkbox

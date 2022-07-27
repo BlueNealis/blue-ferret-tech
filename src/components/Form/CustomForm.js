@@ -3,10 +3,10 @@ import Checkbox from './Checkbox'
 const CustomForm = ({type, checked, handleChange}) => {
 let label = {}
 
-if(type === 'Hardware') {
+if(type === 'hardware') {
   label['first'] = 'Repair'
   label['second'] = 'Cleaning'
-} else if (type === 'Software') {
+} else if (type === 'software') {
   label['first'] = 'Installation/Software Setup'
   label['second'] = 'Virus Removal/Diagnosis'
 } else {

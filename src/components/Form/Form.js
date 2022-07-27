@@ -20,7 +20,7 @@ const handleChange = () => {
       <Checkbox label='Mobile' checked={checked} onChange={handleChange}/>
       <Checkbox label='Home' checked={checked} onChange={handleChange}/>
         <br/>
-        {type !== 'General' && <CustomForm type={type}/>}
+        {type !== 'general' && <CustomForm type={type}/>}
         <br/>
       <Checkbox label='Desktop' checked={checked} onChange={handleChange}/>
       <Checkbox label='Laptop' checked={checked} onChange={handleChange}/>

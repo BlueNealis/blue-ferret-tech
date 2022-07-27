@@ -1,3 +1,4 @@
+import './App.css';
 import React, {useState} from 'react'
 import CustomForm from './CustomForm'
 import Checkbox from './Checkbox'
@@ -10,6 +11,7 @@ const handleChange = () => {
 }
 
   return (
+    <div>
     <form>
       <input type='text' placeholder='Name: First Last'></input>
         <br/>
@@ -30,6 +32,7 @@ const handleChange = () => {
       <input type='text' placeholder='Any additional details I should know?'></input>
       <button>Submit</button>
     </form>
+    </div>
   )
 }
 

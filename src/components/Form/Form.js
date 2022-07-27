@@ -8,6 +8,7 @@ const [checked, setChecked] = React.useState(false)
 const handleChange = () => {
   setChecked(!checked)
 }
+
   return (
     <form>
       <input type='text' placeholder='Name: First Last'></input>
@@ -19,7 +20,7 @@ const handleChange = () => {
       <Checkbox label='Mobile' checked={checked} onChange={handleChange}/>
       <Checkbox label='Home' checked={checked} onChange={handleChange}/>
         <br/>
-      <CustomForm type={type}/>
+        {type !== 'General' && <CustomForm type={type}/>}
         <br/>
       <Checkbox label='Desktop' checked={checked} onChange={handleChange}/>
       <Checkbox label='Laptop' checked={checked} onChange={handleChange}/>
@@ -27,7 +28,7 @@ const handleChange = () => {
       <input type='text' Placeholder='Other enter'></input>
         <br/>
       <input type='text' placeholder='Any additional details I should know?'></input>
-      <button>Submit</button> 
+      <button>Submit</button>
     </form>
   )
 }

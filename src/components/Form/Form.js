@@ -8,6 +8,10 @@ import PhoneInput from 'react-phone-number-input'
 const Form = ({type}) => {
 const [checked, setChecked] = React.useState(false)
 const [phoneNumber, setPhoneNumber] = React.useState()
+const [otherDevice, setOtherDevice] = React.useState('')
+const [clientDetails, setClientDetails] = React.useState('')
+const [clientName, setClientName] = React.useState('')
+const [clientEmail, setClientEmail] = React.useState('')
 
 const handleChange = () => {
   setChecked(!checked)
@@ -17,26 +21,68 @@ const handleChange = () => {
     <div className='appt-block'>
       <div className='form-block'>
       <form>
-        <input type='text' placeholder='Name: First Last'></input>
+        <input value={clientName} onChange={setClientName} type='text' placeholder='Name: First Last'></input>
           <br/>
-        <input type='text' placeholder='email@example.com'></input>
+
+        <input
+          value={clientEmail}
+          onChange={setClientEmail}
+          type='text'
+          placeholder='email@example.com'></input>
+
           <br/>
           <PhoneInput
-        placeholder="Enter phone number"
-        value={phoneNumber}
-        onChange={setPhoneNumber}/>
+            country= "US"
+            placeholder="Enter phone number"
+            value={phoneNumber}
+            onChange={setPhoneNumber}
+            />
           <br/>
-        <Checkbox label='Mobile' checked={checked} onChange={handleChange}/>
-        <Checkbox label='Home' checked={checked} onChange={handleChange}/>
+
+        <Checkbox
+          label='Mobile'
+          checked={checked}
+          onChange={handleChange}/>
+
+        <Checkbox
+          label='Home'
+          checked={checked}
+          onChange={handleChange}/>
+
           <br/>
           {type !== 'general' && <CustomForm type={type}/>}
           <br/>
-        <Checkbox label='Desktop' checked={checked} onChange={handleChange}/>
-        <Checkbox label='Laptop' checked={checked} onChange={handleChange}/>
+
+        <Checkbox
+          label='Desktop'
+          checked={checked}
+          onChange={handleChange}/>
+
+        <Checkbox
+          label='Laptop'
+          checked={checked}
+          onChange={handleChange}/>
+
           <br/>
-        <input type='text' Placeholder='Other enter'></input>
+
+        <Checkbox label='Other '
+        checked={checked}
+        onChange={handleChange}/>
+
+        <input
+        value={otherDevice}
+        onChange={setOtherDevice}
+        type='text'
+        Placeholder='Describe'></input>
+
           <br/>
-        <input type='text' placeholder='Any additional details I should know?'></input>
+          
+        <input
+        value={clientDetails}
+        onChange={setClientDetails}
+        type='text'
+        placeholder='Any additional details I should know?'></input>
+
         <button>Submit</button>
       </form>
       </div>

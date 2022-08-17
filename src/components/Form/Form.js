@@ -2,49 +2,61 @@ import '../AppointmentWindow/ApptWindow.css'
 import React, {useState} from 'react'
 import CustomForm from './CustomForm'
 import Checkbox from './Checkbox'
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
 
 const Form = ({type}) => {
-const [checked, setChecked] = React.useState(false)
-const [phoneNumber, setPhoneNumber] = React.useState()
-const [otherDevice, setOtherDevice] = React.useState('')
-const [clientDetails, setClientDetails] = React.useState('')
-const [clientName, setClientName] = React.useState('')
-const [clientEmail, setClientEmail] = React.useState('')
+const [phoneType, setPhoneTypeChecked] = React.useState([false, false])
+const [deviceType, setDeviceType] = useState([false, false, false])
+const [checked, setChecked] = useState(false)
+const [inputValues, setInputValues] = useState({phoneNumber: null,
+  otherDevice:'',
+  clientDetails: '',
+  clientName:'',
+  clientEmail:''
+})
+const {clientName, clientEmail, clientDetails, phoneNumber, otherDevice} = inputValues
+const handleChange = (e) => {
+  const {name, value} = e.target
+  setInputValues({...inputValues, [name]: value})
 
-const handleChange = () => {
   setChecked(!checked)
 }
+
 
   return (
     <div className='appt-block'>
       <div className='form-block'>
       <form>
-        <input value={clientName} onChange={setClientName} type='text' placeholder='Name: First Last'></input>
+        <input value={inputValues.clientName}
+        name='clientName'
+        onChange={handleChange}
+        type='text'
+        placeholder='Name: First Last'></input>
           <br/>
 
         <input
+          name='clientEmail'
           value={clientEmail}
-          onChange={setClientEmail}
+          onChange={handleChange}
           type='text'
           placeholder='email@example.com'></input>
 
           <br/>
-          <PhoneInput
-            country= "US"
+          <input
+            name='phoneNumber'
             placeholder="Enter phone number"
             value={phoneNumber}
-            onChange={setPhoneNumber}
+            onChange={handleChange}
             />
           <br/>
 
         <Checkbox
+          type='phone'
           label='Mobile'
           checked={checked}
           onChange={handleChange}/>
 
         <Checkbox
+          type='phone'
           label='Home'
           checked={checked}
           onChange={handleChange}/>
@@ -54,32 +66,38 @@ const handleChange = () => {
           <br/>
 
         <Checkbox
+          type='device'
           label='Desktop'
           checked={checked}
           onChange={handleChange}/>
 
         <Checkbox
+          type='device'
           label='Laptop'
           checked={checked}
           onChange={handleChange}/>
 
           <br/>
 
-        <Checkbox label='Other '
-        checked={checked}
-        onChange={handleChange}/>
+        <Checkbox
+          type='device'
+          label='Other '
+          checked={checked}
+          onChange={handleChange}/>
 
         <input
+        name='otherDevice'
         value={otherDevice}
-        onChange={setOtherDevice}
+        onChange={handleChange}
         type='text'
-        Placeholder='Describe'></input>
+        placeholder='Describe'></input>
 
           <br/>
-          
+
         <input
+        name='clientDetails'
         value={clientDetails}
-        onChange={setClientDetails}
+        onChange={handleChange}
         type='text'
         placeholder='Any additional details I should know?'></input>
 

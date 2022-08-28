@@ -4,7 +4,7 @@ import CustomForm from './CustomForm'
 import Checkbox from './Checkbox'
 
 const Form = ({type}) => {
-const [phoneType, setPhoneTypeChecked] = React.useState([false, false])
+const [phoneType, setPhoneTypeChecked] = useState([false, false])
 const [deviceType, setDeviceType] = useState([false, false, false])
 const [checked, setChecked] = useState(false)
 const [inputValues, setInputValues] = useState({phoneNumber: null,
@@ -24,8 +24,7 @@ const handleChange = (e) => {
 
   return (
     <div className='appt-block'>
-      <div className='form-block'>
-      <form>
+      <form className='form-block'>
         <input value={inputValues.clientName}
         name='clientName'
         onChange={handleChange}
@@ -68,22 +67,20 @@ const handleChange = (e) => {
         <Checkbox
           type='device'
           label='Desktop'
-          checked={checked}
-          onChange={handleChange}/>
+          checked={deviceType[0]}
+          onChange={(e) => setDeviceType([!deviceType[0], false, false])}/>
 
         <Checkbox
           type='device'
           label='Laptop'
-          checked={checked}
-          onChange={handleChange}/>
-
-          <br/>
+          checked={deviceType[1]}
+          onChange={(e) => setDeviceType([false, !deviceType[1], false])}/>
 
         <Checkbox
           type='device'
           label='Other '
-          checked={checked}
-          onChange={handleChange}/>
+          checked={deviceType[2]}
+          onChange={(e) => setDeviceType([false, false, !deviceType[2]])}/>
 
         <input
         name='otherDevice'
@@ -103,7 +100,6 @@ const handleChange = (e) => {
 
         <button>Submit</button>
       </form>
-      </div>
     </div>
   )
 }

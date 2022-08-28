@@ -19,6 +19,12 @@ const App = () => {
       <NavBar />
       {!formType && <AptWindow handleClick={handleClick}/>}
       {formType && <Form type={formType} />}
+      <footer>
+        <h1 style={{fontSize:'.5rem'}}>Background Photo by
+        <a href="https://unsplash.com/es/@fellowshipbattlecreek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ron Kenney</a> on
+        <a href="https://unsplash.com/s/photos/south-carolina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </h1>
+      </footer>
     </div>
   );
 }

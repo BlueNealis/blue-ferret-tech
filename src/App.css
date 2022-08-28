@@ -1,5 +1,7 @@
 body {
-  background-color: #CBF3F0;
+  background-image: url('ron-kenney-vG3iYginN30-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

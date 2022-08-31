@@ -8,7 +8,7 @@ const NavBar = () => {
     </div>
     <div className='nav-element'>
       <h1>Menu</h1>
-      <img></img> 
+      <img></img>
     </div>
     </header>
   )

@@ -9,14 +9,17 @@ import {Link, Route} from 'react-router-dom'
 const App = () => {
   const [formType, setFormType] = useState('')
 
-  const handleClick = (event) => {
-      console.log(event.target.id)
-      setFormType(event.target.id);
+  const handleClick = (e) => {
+      setFormType(e.target.id);
+  }
+
+  const resetForm = (e) => {
+    setFormType('')
   }
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar resetForm={resetForm}/>
       {!formType && <AptWindow handleClick={handleClick}/>}
       {formType && <Form type={formType} />}
       <footer>

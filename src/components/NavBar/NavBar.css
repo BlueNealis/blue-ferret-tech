@@ -15,3 +15,7 @@ h1 {
 .nav-element {
   margin: 2%;
 }
+
+.logo-text:hover {
+  cursor: pointer;
+}

@@ -1,15 +1,22 @@
 .text-input {
   width: 80%;
-  height: 10%;
+  height: 8%;
 }
 
 .description {
-  height: 30%;
+  height: 25%;
 }
 
 .phone {
   width: 50%;
   margin-right: 30%;
+}
+
+.phone-type {
+  display: inline-block;
+  position: absolute;
+  margin-left: -16%;
+  margin-top: 1%;
 }
 
 input {

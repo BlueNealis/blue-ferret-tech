@@ -54,7 +54,7 @@ const handleChange = (e) => {
             placeholder="Enter phone number"
             value={phoneNumber}
             onChange={handleChange}/>
-        <div className='checkbox-wrapper'>
+        <div className='checkbox-wrapper phone-type'>
           <Checkbox
             type='phone'
             label='Mobile'

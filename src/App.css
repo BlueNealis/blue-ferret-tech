@@ -17,9 +17,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+button {
+  border: none;
+  height: 8%;
+  width: 20%;
+  background-color: #3c6658;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
 
 button:hover {
   cursor: pointer;
+  background-color: #7aa396;
+  border-radius: 3px;
 }
 
 .appt-block {

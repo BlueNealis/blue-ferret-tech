@@ -26,14 +26,17 @@ const handleChange = (e) => {
   return (
     <div className='appt-block'>
       <form className='form-block'>
+        <label>Name: First Last</label>
+        <br/>
         <input className='text-input'
         value={inputValues.clientName}
         name='clientName'
         onChange={handleChange}
         type='text'
-        placeholder='Name: First Last'></input>
+        placeholder='Name'></input>
           <br/>
-
+        <label>Email:</label>
+        <br/>
         <input
           name='clientEmail'
           className='text-input'
@@ -43,14 +46,14 @@ const handleChange = (e) => {
           placeholder='email@example.com'></input>
 
           <br/>
+          <label>Phone Number: </label>
+          <br/>
           <input
             name='phoneNumber'
-            className='text-input'
+            className='text-input phone'
             placeholder="Enter phone number"
             value={phoneNumber}
-            onChange={handleChange}
-            />
-          <br/>
+            onChange={handleChange}/>
         <div className='checkbox-wrapper'>
           <Checkbox
             type='phone'

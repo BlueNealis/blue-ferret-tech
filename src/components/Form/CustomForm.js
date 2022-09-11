@@ -1,5 +1,4 @@
 import React from 'react'
-import Checkbox from './Checkbox'
 const CustomForm = ({type, checked, handleChange}) => {
 let label = {}
 
@@ -15,8 +14,14 @@ if(type === 'hardware') {
 }
 
   return(<>
-    <Checkbox label={label.first} checked={checked} onChange={handleChange}/>
-    <Checkbox label={label.second} checked={checked} onChange={handleChange}/>
+  <label>
+    <input type='checkbox' checked={checked} onChange={handleChange}/>
+    {label.first}
+  </label>
+  <label>
+    <input type='checkbox' checked={checked} onChange={handleChange}/>
+    {label.second}
+  </label>
     </>
   )
 }

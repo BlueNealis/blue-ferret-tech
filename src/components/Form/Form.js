@@ -15,6 +15,7 @@ const [inputValues, setInputValues] = useState({phoneNumber: null,
   clientEmail:''
 })
 const {clientName, clientEmail, clientDetails, phoneNumber, otherDevice} = inputValues
+
 const handleChange = (e) => {
   const {name, value} = e.target
   setInputValues({...inputValues, [name]: value})
@@ -26,14 +27,15 @@ const handleChange = (e) => {
   return (
     <div className='appt-block'>
       <form className='form-block'>
-        <label>Name: First Last</label>
+        <label>Name: First Last *</label>
         <br/>
         <input className='text-input'
         value={inputValues.clientName}
         name='clientName'
         onChange={handleChange}
         type='text'
-        placeholder='Name'></input>
+        placeholder='Name'
+        ></input>
           <br/>
         <label>Email:</label>
         <br/>
@@ -57,12 +59,14 @@ const handleChange = (e) => {
         <div className='checkbox-wrapper phone-type'>
           <Checkbox
             type='phone'
+            name='phone'
             label='Mobile'
             checked={checked}
             onChange={handleChange}/>
 
           <Checkbox
             type='phone'
+            name='phone'
             label='Home'
             checked={checked}
             onChange={handleChange}/>
@@ -74,23 +78,30 @@ const handleChange = (e) => {
           </div>
           <br/>
         <div className='checkbox-wrapper'>
-          <Checkbox
-            type='device'
-            label='Desktop'
+        <label>
+          <input
+            type='checkbox'
+            name='device'
             checked={deviceType[0]}
             onChange={(e) => setDeviceType([!deviceType[0], false, false])}/>
-
-          <Checkbox
-            type='device'
-            label='Laptop'
+            Desktop
+            </label>
+        <label>
+          <input
+            type='checkbox'
+            name='device'
             checked={deviceType[1]}
             onChange={(e) => setDeviceType([false, !deviceType[1], false])}/>
-
-          <Checkbox
-            type='device'
-            label='Other '
+            Laptop
+          </label>
+          <label>
+          <input
+            type='checkbox'
+            name='device'
             checked={deviceType[2]}
             onChange={(e) => setDeviceType([false, false, !deviceType[2]])}/>
+            Other
+          </label>
 
         <input
         name='otherDevice'

@@ -1,7 +1,6 @@
 import '../AppointmentWindow/ApptWindow.css'
 import React, {useState} from 'react'
 import CustomForm from './CustomForm'
-import Checkbox from './Checkbox'
 import './Form.css'
 
 const Form = ({type}) => {
@@ -61,8 +60,8 @@ const handleChange = (e) => {
           <input
             type='checkbox'
             name='phone'
-            checked={checked}
-            onChange={handleChange}/>
+            checked={phoneType[0]}
+            onChange={(e) => setPhoneTypeChecked([!phoneType[0], false])}/>
             Mobile
           </label>
 
@@ -71,8 +70,8 @@ const handleChange = (e) => {
             type='checkbox'
             name='phone'
             label='Home'
-            checked={checked}
-            onChange={handleChange}/>
+            checked={phoneType[1]}
+            onChange={(e) => setPhoneTypeChecked([false, !phoneType[1]])}/>
             Home
         </label>
           </div>

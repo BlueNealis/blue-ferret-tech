@@ -57,19 +57,24 @@ const handleChange = (e) => {
             value={phoneNumber}
             onChange={handleChange}/>
         <div className='checkbox-wrapper phone-type'>
-          <Checkbox
-            type='phone'
+        <label>
+          <input
+            type='checkbox'
             name='phone'
-            label='Mobile'
             checked={checked}
             onChange={handleChange}/>
+            Mobile
+          </label>
 
-          <Checkbox
-            type='phone'
+        <label>
+          <input
+            type='checkbox'
             name='phone'
             label='Home'
             checked={checked}
             onChange={handleChange}/>
+            Home
+        </label>
           </div>
 
           <br/>

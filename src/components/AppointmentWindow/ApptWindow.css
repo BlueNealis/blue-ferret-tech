@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FF9F1C;
+  background-color: rgb(255, 159, 28, 0.85);
   width: 70vw;
-  height: 65vh;
+  height: 70vh;
   margin-top: 2%;
   padding: 2%;
 }
@@ -16,4 +16,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 2%;
   grid-column-gap: 2%;
+}
+
+.form-block {
+  border: 5px solid white;
+  border-radius: 5px;
+  height: 90%;
+  width: 87%;
+  background-color: #FFBF80;
+  color: #381C0B;
+  padding: 3%;
 }

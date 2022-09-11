@@ -4,7 +4,7 @@
   height: 65%;
   width: 87%;
   margin: 1%;
-  background-color: #FFBF80;
+  background-color: rgb(241, 241, 241, 0.6);
   padding: 2%;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   border-radius: 2%;
   height: 20%;
   width: 80%;
-  background-color: #FFBF80;
+  background-color: rgb(241, 241, 241, 0.6);
   padding: 1%;
   text-align: center;
 }

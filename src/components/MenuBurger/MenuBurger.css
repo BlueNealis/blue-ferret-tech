@@ -1,0 +1,7 @@
+.menu-box {
+  width: 30vw;
+  height: 70vh;
+  background-color: white;
+  float: right;
+  z-index: 9999;
+}

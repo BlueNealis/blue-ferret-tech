@@ -19,3 +19,7 @@ h1 {
 .logo-text:hover {
   cursor: pointer;
 }
+
+.menu {
+  margin-left: 45vw; 
+}

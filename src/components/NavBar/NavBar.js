@@ -7,7 +7,7 @@ const NavBar = ({resetForm}) => {
       <h1 onClick={resetForm} className='logo-text'>Ferret Customs & Tech</h1>
     </div>
     <div className='nav-element'>
-      <h1>Menu</h1>
+      <h1 className='menu'>Menu</h1>
       <img></img>
     </div>
     </header>

@@ -1,4 +1,4 @@
-![Tea Journal](src/components/TeaCard/FavoriteTea.svg)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -36,7 +36,7 @@ Checkout the website [here](https://ferret-tech-and-customs.herokuapp.com/)
 
 ![Custom Form](custom-form.gif)
 
-- 
+-
 
 ### Future Features
 

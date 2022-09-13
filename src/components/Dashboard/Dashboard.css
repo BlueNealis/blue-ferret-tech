@@ -32,6 +32,13 @@ button:hover {
   border-radius: 3px;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-appts {
   width: 100%;
   height: 70%;

@@ -17,7 +17,7 @@ function Dashboard() {
   }
 
   return(
-    <>
+    <div className='app'>
       <NavBar resetForm={resetForm}/>
       {!formType && <AptWindow handleClick={handleClick}/>}
       {formType && <Form type={formType} />}
@@ -27,7 +27,7 @@ function Dashboard() {
         <a href="https://unsplash.com/s/photos/south-carolina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </h1>
       </footer>
-    </>
+    </div>
   )
 }
 

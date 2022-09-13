@@ -36,7 +36,9 @@ Checkout the website [here](https://ferret-tech-and-customs.herokuapp.com/)
 
 ![Custom Form](custom-form.gif)
 
--
+- Drop down menu that appears on menu click
+- Fillable forms
+
 
 ### Future Features
 

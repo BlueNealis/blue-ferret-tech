@@ -1,9 +1,8 @@
 .nav-bar {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   background-color:rgb(40, 156, 146, 0.8);
-
   margin: 0;
   padding: 0;
 }
@@ -18,4 +17,13 @@ h1 {
 
 .logo-text:hover {
   cursor: pointer;
+}
+
+.menu {
+  margin-left: 45vw;
+}
+
+.menu:hover {
+  cursor: pointer;
+  color: black;
 }

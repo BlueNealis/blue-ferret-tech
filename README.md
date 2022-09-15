@@ -1,4 +1,4 @@
-
+![FerretLogo](src/ferretBig.png)
 
 ## Table of Contents
 - [Introduction](#introduction)

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 
 function ProductCard({title, price, imgUrl, key}) {
   return(
-  <Link to={`/${title}/${key}`}>
     <div className='product-card'>
-      <h1>{title}</h1>
-      <img src={imgUrl}/>
-      <p>{price}</p>
+      <Link to={`/${title}/${key}`}>
+        <h1>{title}</h1>
+        <img src={imgUrl}/>
+        <p>{price}</p>
+      </Link>
     </div>
-  </Link>
   )
 }
 

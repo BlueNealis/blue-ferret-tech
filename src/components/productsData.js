@@ -1,7 +1,7 @@
 let products = [
   {id:1,
     name:"Acer Chromebook 315",
-    images:["https://c1.neweggimages.com/ProductImageCompressAll1280/A6ZPD22030916LKBXD0.jpg"],
+    images:["https://i5.walmartimages.com/asr/1da74290-1cc8-4101-aecd-e2aeda5bc2cb_2.15cd7105a586984d405a6cc4d63a357a.png"],
     buildDate:'09-28-2022',
     specs:["Intel Celeron N5100 (1.10GHz)","4GB Memory 32 GB eMMC SSD","Intel UHD Graphics","1920 x 1080","Chrome OS"],
     status:"Like New",

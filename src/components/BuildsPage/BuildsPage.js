@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import NavBar from '../NavBar/NavBar'
 import products from '../productsData.js'
 import ProductCard from '../ProductCard/ProductCard'
+import './BuildsPage.css'
 
 function BuildsPage(){
   const cards = products.map((product) => {
@@ -14,7 +15,7 @@ function BuildsPage(){
   return(
     <>
       <NavBar />
-      <div classname='builds-container'>
+      <div className='builds-container'>
         {cards}
       </div>
     </>

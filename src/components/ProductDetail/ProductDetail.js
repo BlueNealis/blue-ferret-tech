@@ -1,9 +1,9 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
 
-function ProductDetail() {
+function ProductDetail({id}) {
   return(
-
+    <h1>{`${id}`}</h1>
   )
 }
 

@@ -8,11 +8,11 @@ import BuildsPage from './components/BuildsPage/BuildsPage'
 function App(){
   return(
     <Switch>
-      <Route path='/'>
+      <Route exact path='/'>
         <Dashboard />
       </Route>
-      <Route path='/builds'>
-        <BuildsPage />
+      <Route exact path='/builds'>
+        <BuildsPage/>
       </Route>
     </Switch>
   )

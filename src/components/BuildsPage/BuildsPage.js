@@ -1,8 +1,12 @@
 import React from 'react'
+import NavBar from '../NavBar/NavBar'
 
 function BuildsPage(){
   return(
-    <h1>BuildPage</h1>
+    <>
+      <NavBar />
+      <h1>BuildPage</h1>
+    </>
   )
 }
 

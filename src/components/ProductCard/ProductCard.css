@@ -6,11 +6,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   text-align: center;
   box-shadow:15px 14px 15px rgba(0, 0, 0, 0.25);
+  padding: 1%;
+  font-weight: 400;
 }
 
 img {
-  width:70%;
+  width:60%;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.call-to-action {
+  display:flex;
+  justify-content: space-around;
 }

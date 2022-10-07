@@ -1,4 +1,4 @@
-const products = [
+let products = [
   {name:"Acer Chromebook 315",
     images:["https://c1.neweggimages.com/ProductImageCompressAll1280/A6ZPD22030916LKBXD0.jpg"],
     buildDate:'09-28-2022',
@@ -24,3 +24,5 @@ const products = [
     sale: true,
     saleAmount: 0.2,},
 ]
+
+export default products

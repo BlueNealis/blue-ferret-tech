@@ -1,10 +1,8 @@
 import React from 'react'
 import './ProductCard.css'
-import products from '../productsData'
 import { Link } from 'react-router-dom'
 
-function ProductCard({title, price, imgUrl}) {
-  let key = 5654;
+function ProductCard({title, price, imgUrl, key}) {
   return(
   <Link to={`/${title}/${key}`}>
     <div className='product-card'>

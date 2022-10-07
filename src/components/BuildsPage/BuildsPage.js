@@ -4,9 +4,10 @@ import products from '../productsData.js'
 import ProductCard from '../ProductCard/ProductCard'
 import './BuildsPage.css'
 
-function BuildsPage(){
+function BuildsPage({handleSelect}){
   const cards = products.map((product) => {
-    return <ProductCard title={product.name}
+    return <ProductCard handleSelect={handleSelect}
+    title={product.name}
     imgUrl={product.images[0]}
     price={product.price}
     key={product.id}

@@ -1,0 +1,38 @@
+.detail-container {
+  display: flex;
+  color: black;
+  width: 80vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.product-page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.add-cart-button {
+  margin-top: 35%;
+  margin-right: 2%;
+}
+
+.detail-title {
+  margin-bottom: 10%;
+}
+
+.bullet-point {
+  margin: 1%;
+}
+
+.detail-price {
+  margin-top: 53%;
+  margin-left: 40%;
+}

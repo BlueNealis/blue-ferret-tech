@@ -8,7 +8,7 @@ function ProductCard({title, price, imgUrl, key}) {
       <Link to={`/${title}/${key}`}>
         <h1>{title}</h1>
         <img src={imgUrl}/>
-        <p>{price}</p>
+        <p>$ {price}</p>
       </Link>
     </div>
   )

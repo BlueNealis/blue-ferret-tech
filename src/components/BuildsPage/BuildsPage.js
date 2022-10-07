@@ -13,12 +13,14 @@ function BuildsPage(){
     id={product.id}/>
   })
   return(
-    <>
+    <div className='background'>
       <NavBar />
-      <div className='builds-container'>
-        {cards}
+      <div className='wrapper'>
+        <div className='builds-container'>
+          {cards}
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 

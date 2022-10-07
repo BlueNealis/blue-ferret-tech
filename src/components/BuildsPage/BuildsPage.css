@@ -8,6 +8,16 @@
   color:black;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
 a {
     color:black;
+}
+
+.background {
+  background-color: rgba(217, 217, 217, 0.6);
 }
